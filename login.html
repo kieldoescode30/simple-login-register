@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <style>
+      /* Poppins font */
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 97vh;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .register-container {
+        width: 900px;
+        height: 640px;
+        background-color: #5AB2FF;
+        border-radius: 20px;
+        position: relative;
+        filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.25));
+        overflow: hidden;
+      }
+
+      .register-container img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        opacity: 40%;
+        z-index: -1;
+      }
+
+      .white-trapezoid {
+        background-color: #fff;
+        width: 100%;
+        height: 350px;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        transform: skew(0deg, -19deg) translateY(190px);
+      }
+
+      .main-text {
+        position: absolute;
+        top: 38%;
+        left: 7%;
+      }
+
+      .main-text h1 {
+        margin: 0;
+        color: #fff;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 0.65;
+      }
+
+      .main-text span {
+        font-size: 4.5rem;
+        color: #fff;
+        font-weight: 650;
+        line-height: 1;
+      }
+
+      form {
+        position: absolute;
+        background-color: #fff;
+        top: 20%;
+        right: 7%;
+        padding: 24px;
+        z-index: 4;
+        filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.25));
+        border-radius: 16px;
+        border: none;
+        width: 360px;
+      }
+
+      form h2 {
+        color: #1877F2;
+        font-size: 34px;
+        margin: 0;
+        margin-bottom: 12px;
+      }
+
+      label {
+        display: block;
+        font-size: 14px;
+        font-weight: 550;
+        margin-bottom: 4px;
+      }
+
+      .line {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        margin-bottom: 16px;
+      }
+
+      .line input {
+        display: block;
+        width: 100%;
+        height: 28px;
+        border-radius: 4px;
+        border: none;
+        outline: 0.25px solid #000;
+        padding: 0px 6px 0px 6px;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        padding: 12px 0px 12px 0px;
+        font-size: 16px;
+        background-color: #1877F2;
+        border: none;
+        border-radius: 8px;
+        color: #fff;
+        cursor: pointer;
+        margin-bottom: 12px;
+      }
+
+      a {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        color: #1877F2;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="register-container">
+      <div class="main-text">
+        <h1>WELCOME TO</h1>
+        <span>BSCS-2B</span>
+      </div>
+      <form action="/login" method="post">
+        <h2>Login</h2>
+        <div class="line">
+          <div class="info first">
+            <label for="username">Username</label>
+            <input type="username" id="username" name="username" required>
+          </div>
+          <div class="info first">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+        </div>
+        <input type="submit" value="Login">
+        <a href="/">Don't have an account?</a>
+      </form>
+      <div class="white-trapezoid"></div>
+      <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/441081843_1596417907781107_3807720618590036750_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFMy3VpVseuZ_p1NCZk_M34u5D22QV95EO7kPbZBX3kQ1nYSszce6gzT1Yk3sTjcdEHa8wFj4j3MXZ1JSU7Hr-y&_nc_ohc=jTaLJPWd604Q7kNvgHsJvnz&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEb1Je-VMfBBOUkoCXoZOOU41wX3Vuob8BmYWwi53D4ug&oe=667648DB" alt="">
+    </div>
+  </body>
+</html>
